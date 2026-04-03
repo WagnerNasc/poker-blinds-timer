@@ -5,29 +5,29 @@
 ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 
-Timer visual para gerenciar os níveis de blinds em partidas de poker, com progressão automática de níveis, exibição dos blinds atual e próximo, e suporte a dark mode.
+Visual timer to manage blind levels in poker games, with automatic level progression, current and next blinds display, and dark mode support.
 
-## 🔑️ Key componentsgit add README.md
+## 🔑️ Key components
 
 1. Timer
 
-Controla a contagem regressiva de cada nível via hook `useTimer`, avançando automaticamente para o próximo nível ao zerar o tempo.
+Handles the countdown for each level via the `useTimer` hook, automatically advancing to the next level when time runs out.
 
 2. Store
 
-Gerencia o estado global com [Zustand](https://zustand-demo.pmnd.rs/): lista de níveis, índice atual, tempo restante e configurações de volume.
+Manages global state with [Zustand](https://zustand-demo.pmnd.rs/): level list, current index, time remaining, and volume settings.
 
 3. UI
 
-Layout em grid de 3 colunas com anel de progresso animado (SVG), exibição dos blinds atual e próximo, e modal de configurações com [Radix UI](https://www.radix-ui.com/).
+Three-column grid layout with an animated SVG progress ring, current and next blinds display, and a settings modal built with [Radix UI](https://www.radix-ui.com/).
 
-| Componente | Descrição |
-|------------|-----------|
-| `TimerScreen` | Tela principal com layout e orquestração |
-| `ProgressRing` | Anel SVG animado com progresso do nível |
-| `BlindsDisplay` | Exibe small blind, big blind e ante |
-| `Controls` | Botões de play/pause, avançar e configurações |
-| `SettingsModal` | Edição dos níveis e configurações de volume |
+| Component | Description |
+|-----------|-------------|
+| `TimerScreen` | Main screen with layout and orchestration |
+| `ProgressRing` | Animated SVG ring showing level progress |
+| `BlindsDisplay` | Shows small blind, big blind and ante |
+| `Controls` | Play/pause, next level and settings buttons |
+| `SettingsModal` | Edit levels and volume settings |
 
 ## 💨️ Running Project
 
